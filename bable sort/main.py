@@ -1,8 +1,31 @@
-numbers = [9, 5, 4, 1, 7, 94, 513, 574, -1, -200, 0]
+def bable_sort(numbers: list) -> list:
 
-for i in range(len(numbers)):
-    for j in range(len(numbers) - i - 1):
-        if numbers[j] > numbers[j + 1]:
-            numbers[j + 1], numbers[j] = numbers[j], numbers[j + 1]
+    is_sorted = False
 
-print(numbers)
+    for i in range(len(numbers)):
+
+        if is_sorted:
+            return numbers
+
+        for j in range(len(numbers) - i):
+
+            if numbers[j] > numbers[j + 1]:
+                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+                is_sorted = False
+                continue
+
+            is_sorted = False
+
+    return numbers
+
+
+def main():
+
+    num = int(input("enter number : "))
+    numbers = list()
+    for i in range(num):
+        numbers.append(int(input(f"enter number for numbers {i + 1} : ")))
+
+    numbers = bable_sort(numbers=numbers)
+
+    print(numbers)
