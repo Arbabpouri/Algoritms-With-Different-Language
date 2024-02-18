@@ -10,11 +10,11 @@ void line_search(const int numbers[], const int arrayLen, const int number)
     {
         if (number == numbers[i])
         {
-            printf("adad yaft shode dar index %d ast\n", i);
+            printf("number founded , index : %d \n", i);
             return ;
         } // end if
     }
-    puts("yaft nashod");
+    puts("no founded");
 
 } // end line_search function
 
@@ -32,11 +32,11 @@ int main(void)
 
     for (int i = 0; i < len; i++)
     {
-        printf("index shomare %d ra vared konid -> ", i);
+        printf("please enter number for index : %d -> ", i);
         scanf("%d", &numbers[i]); // get index
     } // end for
 
-    printf("che adadi ru mikhay -> ");
+    printf("number for find -> ");
     scanf("%d", &selected); // get number for search in array
 
     line_search(numbers, len ,selected); // call function for search in array

@@ -50,7 +50,7 @@ void binary_search(const int numbers[], const int arrayLen, const int number)
 
     if (number > numbers[max] || number < numbers[min]) // check number in my array or not
     {
-        puts("yaft nashod");
+        puts("founded");
     }
 
     else
@@ -69,14 +69,14 @@ void binary_search(const int numbers[], const int arrayLen, const int number)
             } // end else if
             else
             {
-                printf("%s %d %s", "adad gofte shode dar index", avvarage, "ast");
+                printf("%s %d", "index :", avvarage);
                 break;
             } // end else
         }
 
         if (min > max)
         {
-            puts("yaft nashod");
+            puts("not founded");
         } // end if
     }
 } // end binary_search function
@@ -93,17 +93,15 @@ int main(void)
 
     for (int i = 0; i < len; i++)
     {
-        printf("%s %d %s", "index shomare", i, "ra bede -> ");
+        printf("%s %d %s", "enter number for index : ", i, " -> ");
         scanf("%d", &numbers[i]); // get array indexs
     }                             // end for
-
-    puts("berim baraye sort");
 
     bubble_sort(numbers, len); // call function for sort array
 
     print_array(numbers, len); // print all indexs
 
-    printf("%s", "che adadi ra mikhay -> ");
+    printf("%s", "number for find -> ");
     scanf("%d", &selected); // get number for search in array
 
     binary_search(numbers, len, selected); // call function for search
