@@ -11,8 +11,8 @@ This project is a comprehensive resource for learning various programming algori
 ## Languages Supported 🌐
 We provide implementations in multiple programming languages including:
 - Python 🐍
-- C 🇨🇦
-- C++ 🇨🇦
+- C 🥇
+- C++ 🥈
 - Go 🚀
 - And more!
 
@@ -34,9 +34,9 @@ Also, please share this project to help more students benefit from it! 📢
 
 ## زبان‌های پشتیبانی شده 🌐
 ما پیاده‌سازی‌هایی در زبان‌های برنامه‌نویسی مختلف ارائه می‌دهیم از جمله:
-- پایتون 🐍
-- C 🇨🇦
-- C++ 🇨🇦
+- Python 🐍
+- C 🥇
+- C++ 🥈
 - Go 🚀
 - و بیشتر!
 
