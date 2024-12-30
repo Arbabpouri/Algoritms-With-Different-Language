@@ -18,13 +18,8 @@ class Queue:
 
 
     def add(self, item: Any) -> bool:
-
-        if self.is_empty:
-            self.__rear += 1
-            self.__queue.append(item)
-            return True
         
-        elif not self.is_full:
+        if not self.is_full:
             self.__rear += 1
             self.__queue.append(item)
             return True
